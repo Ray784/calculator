@@ -24,6 +24,15 @@ body{
 	transition: background-color 1s;
 }
 
+.btn:focus {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn:active{
+	background-color: #2d2d2d;
+}
+
 .last{
 	height: 56px;
 	font-size: 20px;
@@ -51,13 +60,13 @@ p{
 }
 
 .up{
-	font-size: 40px;
+	font-size: 60px;
 	height: 140px;
 }
 
 .down{
 	color:  #04B3C4;
-	font-size: 25px;
+	font-size: 40px;
 	height: 40px;
 }
 @media only screen and (max-width: 400px) {
