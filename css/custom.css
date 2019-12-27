@@ -1,20 +1,10 @@
 body{
-	background-color: #ffffff;
+	background-color: #2d2d2d;
 }
 
 @font-face {
   font-family: 'Material';
   src: url("../fonts/MaterialIcons-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Big Space';
-  src: url("../fonts/Big Space.otf");
-}
-
-@font-face {
-  font-family: 'Robotic';
-  src: url("../fonts/jedth.ttf");
 }
 
 @font-face {
@@ -30,13 +20,16 @@ body{
 	cursor: pointer;
 	border-radius: 0px;
 	font-family: "Poppins";
-	font-weight: bold;
 	font-size: 50px;
-	transition: background-color 1.5s;
+	transition: background-color 1s;
 }
 
 .last{
 	height: 80px;
+	font-size: 30px;
+	color: #04B3C4;
+	font-family: "Poppins";
+	border-left: 1px solid #919191;
 }
 
 .inp:hover{
