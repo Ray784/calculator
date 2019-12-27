@@ -13,8 +13,8 @@ body{
 }
 
 .inp{
-	width: 70px;
-	height: 70px;
+	width: 90px;
+	height: 90px;
 	background-color: #2D2D2D;
 	color:white;
 	cursor: pointer;
@@ -34,7 +34,8 @@ body{
 }
 
 .last{
-	height: 56px;
+	height: 72px;
+	width: 70px;
 	font-size: 20px;
 	color: #04B3C4;
 	font-family: "Poppins";
@@ -53,8 +54,8 @@ body{
 
 p{
 	text-align: right;
-	padding: 10px;
-	width: 250px;
+	padding: 25px;
+	width: 360px;
 	color: white;
 	font-family: 'Poppins';
 }
@@ -69,10 +70,18 @@ p{
 	font-size: 40px;
 	height: 40px;
 }
-@media only screen and (max-width: 400px) {
+
+.slide{
+	width: 0.1px;
+	margin-left: 1px;
+	margin-right: -11px;
+	background-color: #04B3C4;
+	height: 360px;
+}
+/*@media only screen and (max-width: 400px) {
 	.inp{
-		width: 50px;
-		height: 50px;
+		width: 70px;
+		height: 70px;
 		cursor: pointer;
 		background-color: #2d2d2d;
 		color: white;
@@ -84,4 +93,4 @@ p{
 	.last{
 		height: 40px;
 	}
-}
+}*/
