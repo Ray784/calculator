@@ -1,0 +1,66 @@
+body{
+	background-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Material';
+  src: url("../fonts/MaterialIcons-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Big Space';
+  src: url("../fonts/Big Space.otf");
+}
+
+@font-face {
+  font-family: 'Robotic';
+  src: url("../fonts/jedth.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf");
+}
+
+.inp{
+	width: 100px;
+	height: 100px;
+	background-color: #2D2D2D;
+	color:white;
+	cursor: pointer;
+	border-radius: 0px;
+	font-family: "Poppins";
+	font-weight: bold;
+	font-size: 50px;
+	transition: background-color 1.5s;
+}
+
+.last{
+	height: 80px;
+}
+
+.inp:hover{
+	background-color: #919191;
+	color: #2d2d2d;
+}
+
+.center{
+	display: block;
+	margin: auto;
+}
+@media only screen and (max-width: 400px) {
+	.inp{
+		width: 70px;
+		height: 70px;
+		cursor: pointer;
+		background-color: #2d2d2d;
+		color: white;
+		border-radius: 0px;
+		font-family: "Poppins";
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.last{
+		height: 56px;
+	}
+}
