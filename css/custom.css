@@ -127,8 +127,8 @@ p {
 }
 @media only screen and (max-width: 400px) {
 	.inp{
-		width: 90px;
-		height: 90px;
+		width: 71px;
+		height: 71px;
 		background-color: #2D2D2D;
 		color:white;
 		cursor: pointer;
@@ -138,39 +138,57 @@ p {
 		transition: background-color 1s;
 	}
 
+	.ripple {
+		width: 71px;
+		height: 71px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.4);
+		transform: scale(0);
+		position: absolute;
+		opacity: 1;
+	}
+
 	.last{
-		height: 72px;
-		width: 70px;
+		height: 56px;
+		width: 71px;
 		font-size: 20px;
 		color: #04B3C4;
 		font-family: "Poppins";
 		border-left: 1px solid #919191;
 	}
 
+	.slide{
+		width: 1px;
+		margin-left: 3px;
+		margin-right: -11px;
+		background-color: #04B3C4;
+		height: 280px;
+	}
+
 	p{
 		text-align: right;
 		padding: 25px;
-		width: 360px;
+		width: 300px;
+		overflow-x: auto;
+		overflow-y: hidden;
+	    white-space: nowrap;
 		color: white;
 		font-family: 'Poppins';
 	}
 
 	.up{
-		font-size: 60px;
-		height: 150px;
+		font-size: 40px;
+		height: 89px;
+		background:url(../img/line.png) center right no-repeat;
+		padding-right: 5px;
+		animation: cursor 0.9s;
+		animation-iteration-count:infinite;
 	}
 
 	.down{
 		color:  #04B3C4;
-		font-size: 40px;
-		height: 50px;
-	}
-
-	.slide{
-		width: 1px;
-		margin-left: 1px;
-		margin-right: -11px;
-		background-color: #04B3C4;
-		height: 360px;
+		font-size: 20px;
+		height: 40px;
+		padding: 5px;
 	}
 }
