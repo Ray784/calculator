@@ -13,8 +13,8 @@ body{
 }
 
 .inp{
-	width: 95px;
-	height: 95px;
+	width: 99px;
+	height: 99px;
 	background-color: #2D2D2D;
 	color:white;
 	border-radius: 50%;
@@ -28,18 +28,16 @@ body{
 }
 
 .ripple {
-  width: 95px;
-  height: 95px;
+  width: 99px;
+  height: 99px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.4);
-  top:0px;
-  left:95px;
   transform: scale(0);
   position: absolute;
   opacity: 1;
 }
 .rippleEffect {
-    animation: rippleDrop .6s linear;
+    animation: rippleDrop .1s linear;
 }
 
 @keyframes rippleDrop {
@@ -55,8 +53,8 @@ body{
 }
 
 .last{
-	height: 76px;
-	width: 72px;
+	height: 79px;
+	width: 79px;
 	font-size: 20px;
 	color: #04B3C4;
 	font-family: "Poppins";
@@ -93,7 +91,7 @@ p {
 
 .up{
 	font-size: 60px;
-	height: 140px;
+	height: 145px;
 	background:url(../img/line.png) center right no-repeat;
 	padding-right: 5px;
 	animation: cursor 0.9s;
@@ -113,12 +111,12 @@ p {
 	color:  #04B3C4;
 	font-size: 40px;
 	padding: 10px;
-	height: 60px;
+	height: 63px;
 }
 
 .slide{
 	width: 1px;
-	margin-left: 1px;
+	margin-left: 3px;
 	margin-right: -11px;
 	background-color: #04B3C4;
 	height: 380px;

@@ -4,8 +4,12 @@ var posY = $('#seven').offset().top;
 function setRipple(obj){
 	let currX = obj.offset().left;
     let currY = obj.offset().top;
+    console.log("act", currX, currY);
+    buttonWidth = $(this).width(),
+    buttonHeight =  $(this).height();
     let x = currX - posX;
     let y = currY - posY;
+    console.log(x,y);
 	$(".ripple").remove();
 	obj.prepend("<span class='ripple'></span>");
 	$(".ripple").css({
@@ -20,12 +24,14 @@ $('button').click(function(e){
 	let obj2 = null;
 	let res ="";
 	let err= '';
+	let scrlval = document.getElementById("top-key").scrollWidth;
 	let text = $(this).text();
 
 	if(text === '='){
     	err = 'bad expression';
     	obj1 = $('#top-key');
     	obj2 = $('#bottom-key');
+    	scrlval = 0;
 	}
     else if(text === "backspace"){
     	let txt = $('#top-key').text();
@@ -43,27 +49,19 @@ $('button').click(function(e){
     else
     	$('#bottom-key').text(err);
 
-    $('#top-key').scrollLeft(document.getElementById("top-key").scrollWidth);
-    $('#bottom-key').scrollLeft(document.getElementById("bottom-key").scrollWidth);
+    $('#top-key').scrollLeft(scrlval);
 });
 
-// how many milliseconds is a long press?
-    var longpress = 600;
-    // holds the start time
-    var start;
-
-    $("#bspk").on( 'mousedown', function( e ) {
-        start = new Date().getTime();
-    } );
-
-    $("#bspk").on( 'mouseleave', function( e ) {
-        start = 0;
-    } );
-
-    $("#bspk").on( 'mouseup', function( e ) {
-        if ( new Date().getTime() >= ( start + longpress )  ) {
-           alert('long press!');   
-        } else {
-           alert('short press!');   
-        }
-    } );
+var pressTimer;
+$("#bspk").mouseup(function(){
+  clearTimeout(pressTimer);
+  // Clear timeout
+  return false;
+}).mousedown(function(){
+  // Set timeout
+	pressTimer = window.setTimeout(function() { 
+		$('#bottom-key').text('');
+		$('#top-key').text('');
+	},600);
+	return false; 
+});
