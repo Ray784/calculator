@@ -27,6 +27,10 @@ body{
 	color: white;
 }
 
+.ui-loader {
+  display:none !important;
+}
+
 .ripple {
   width: 99px;
   height: 99px;
