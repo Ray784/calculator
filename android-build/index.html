@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./bootstrap.min.css">
+        <link rel="stylesheet" href="./custom.css">
+        
+        <title>Calculator</title>
+    </head>
+    <body> 
+        <div class="container">
+			<p class="up" id="top-key"></p>
+			<p class="down" id="bottom-key"></p>
+			<br>
+			<br>
+            <div class="row" style="margin-bottom: -15px;">
+                <div class="col-auto">
+                    <div class="row" style="border-top: 1px solid #919191;">
+                        <button class="btn inp" id="seven">7</button> 
+                        <button class="btn inp" id="eight">8</button> 
+                        <button class="btn inp" id="nine">9</button> 
+                    </div>
+                    <div class="row">
+                        <button class="btn inp" id="four">4</button> 
+                        <button class="btn inp" id="five">5</button> 
+                        <button class="btn inp" id="six">6</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn inp" id="one">1</button> 
+                        <button class="btn inp" id="two">2</button> 
+                        <button class="btn inp" id="three">3</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn inp" id="zero">0</button> 
+                        <button class="btn inp" id="point">.</button> 
+                        <button class="btn inp" id="equals">=</button>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="row" style="border-left: 1px solid #919191; border-top: 1px solid #919191;">
+                        <button class="btn inp last" id="bspk" style="font-family: 'Material';">backspace</button>
+                    </div>
+                    <div class="row"  style="border-left: 1px solid #919191;">
+                        <button class="btn inp last">÷</button>
+                    </div>
+                    <div class="row"  style="border-left: 1px solid #919191;"> 
+                        <button class="btn inp last">×</button> 
+                    </div>
+                    <div class="row"  style="border-left: 1px solid #919191;">
+                        <button class="btn inp last">-</button>
+                    </div>
+                    <div class="row"  style="border-left: 1px solid #919191;">
+                        <button class="btn inp last">+</button>
+                    </div>
+                </div>
+                <div class="col-auto slide"></div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="./jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./bootstrap.min.js"></script>
+        <script type="text/javascript" src="./custom.js"></script>
+        <script type="text/javascript" src="./evaluate.js"></script>
+        <script type="text/javascript" src="./jquery.mobile-1.5.0.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,194 @@
+body{
+	background-color: #2d2d2d;
+}
+
+@font-face {
+  font-family: 'Material';
+  src: url("./MaterialIcons-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./Poppins-Medium.ttf");
+}
+
+.inp{
+	width: 99px;
+	height: 99px;
+	background-color: #2D2D2D;
+	color:white;
+	border-radius: 50%;
+	cursor: pointer;
+	font-family: "Poppins";
+	font-size: 40px;
+}
+
+.inp:hover{
+	color: white;
+}
+
+.ui-loader {
+  display:none !important;
+}
+
+.ripple {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .1s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.btn:focus {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.last{
+	height: 79px;
+	width: 95px;
+	font-size: 30px;
+	color: #04B3C4;
+	font-family: "Poppins";
+}
+
+.center{
+	display: block;
+	margin: auto;
+}
+
+div{
+	overflow: hidden;
+}
+
+p{
+	text-align: right;
+	padding: 25px;
+	width: 380px;
+	overflow-x: auto;
+	overflow-y: hidden;
+    white-space: nowrap;
+	color: white;
+	font-family: 'Poppins';
+}
+
+p::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+p {
+    -ms-overflow-style: none;
+}
+
+.up{
+	font-size: 65px;
+	height: 150px;
+	background:url(./line.png) center right no-repeat;
+	padding-right: 5px;
+	animation: cursor 0.9s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes cursor {
+	0%{
+		 background-size: auto 80px;
+	}
+  100% {
+		background-size: 0px 0px;
+  }
+}
+
+.down{
+	color:  #04B3C4;
+	font-size: 40px;
+	padding: 10px;
+	height: 65px;
+}
+
+.slide{
+	width: 1px;
+	margin-left: 3px;
+	margin-right: -11px;
+	background-color: #04B3C4;
+	height: 396px;
+}
+@media only screen and (max-width: 400px) {
+	.inp{
+		width: 71px;
+		height: 71px;
+		background-color: #2D2D2D;
+		color:white;
+		cursor: pointer;
+		border-radius: 0px;
+		font-family: "Poppins";
+		font-size: 30px;
+		transition: background-color 1s;
+	}
+
+	.ripple {
+		width: 71px;
+		height: 71px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.4);
+		transform: scale(0);
+		position: absolute;
+		opacity: 1;
+	}
+
+	.last{
+		height: 56px;
+		width: 71px;
+		font-size: 20px;
+		color: #04B3C4;
+		font-family: "Poppins";
+		border-left: 1px solid #919191;
+	}
+
+	.slide{
+		width: 1px;
+		margin-left: 3px;
+		margin-right: -11px;
+		background-color: #04B3C4;
+		height: 280px;
+	}
+
+	p{
+		text-align: right;
+		padding: 25px;
+		width: 300px;
+		overflow-x: auto;
+		overflow-y: hidden;
+	    white-space: nowrap;
+		color: white;
+		font-family: 'Poppins';
+	}
+
+	.up{
+		font-size: 40px;
+		height: 89px;
+		background:url(./line.png) center right no-repeat;
+		padding-right: 5px;
+		animation: cursor 0.9s;
+		animation-iteration-count:infinite;
+	}
+
+	.down{
+		color:  #04B3C4;
+		font-size: 20px;
+		height: 40px;
+		padding: 5px;
+	}
+}
