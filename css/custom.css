@@ -17,20 +17,41 @@ body{
 	height: 95px;
 	background-color: #2D2D2D;
 	color:white;
+	border-radius: 50%;
 	cursor: pointer;
-	border-radius: 0px;
 	font-family: "Poppins";
 	font-size: 30px;
-	transition: background-color 1s;
+}
+
+.inp:hover{
+	color: white;
+}
+
+.ripple {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  top:0px;
+  left:95px;
+  transform: scale(0);
+  position: absolute;
+  opacity: 1;
+}
+.rippleEffect {
+    animation: rippleDrop .6s linear;
+}
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 .btn:focus {
    outline: none !important;
    box-shadow: none;
-}
-
-.btn:active{
-	background-color: #2d2d2d;
 }
 
 .last{
@@ -39,12 +60,6 @@ body{
 	font-size: 20px;
 	color: #04B3C4;
 	font-family: "Poppins";
-	border-left: 1px solid #919191;
-}
-
-.inp:hover{
-	background-color: #919191;
-	color: #2d2d2d;
 }
 
 .center{
@@ -52,23 +67,53 @@ body{
 	margin: auto;
 }
 
+div{
+	overflow: hidden;
+}
+
 p{
 	text-align: right;
 	padding: 25px;
 	width: 380px;
+	overflow-x: auto;
+	overflow-y: hidden;
+    white-space: nowrap;
 	color: white;
 	font-family: 'Poppins';
+}
+
+p::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+p {
+    -ms-overflow-style: none;
 }
 
 .up{
 	font-size: 60px;
 	height: 140px;
+	background:url(../img/line.png) center right no-repeat;
+	padding-right: 5px;
+	animation: cursor 0.9s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes cursor {
+	0%{
+		 background-size: auto 70px;
+	}
+  100% {
+		background-size: 0px 0px;
+  }
 }
 
 .down{
 	color:  #04B3C4;
 	font-size: 40px;
-	height: 40px;
+	padding: 10px;
+	height: 60px;
 }
 
 .slide{

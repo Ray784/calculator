@@ -88,6 +88,5 @@ function prepareForEval(expn){
 function evaluate(expn){
 	let arr = prepareForEval(expn);
 	arr = infixToPrefix(arr);
-	console.log(arr);
 	return postfixEvaluation(arr); 
 } 

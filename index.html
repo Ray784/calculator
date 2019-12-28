@@ -8,52 +8,52 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="./css//bootstrap.min.css">
         <link rel="stylesheet" href="./css/custom.css">
-
+        
         <title>Calculator</title>
     </head>
     <body> 
         <div class="container">
-			<p class="up">1+2</p>
-			<p class="down">3</p>
+			<p class="up" id="top-key"></p>
+			<p class="down" id="bottom-key"></p>
 			<br>
 			<br>
             <div class="row">
                 <div class="col-auto">
                     <div class="row">
-                        <button class="btn inp">7</button> 
-                        <button class="btn inp">8</button> 
-                        <button class="btn inp">9</button> 
+                        <button class="btn inp" id="seven">7</button> 
+                        <button class="btn inp" id="eight">8</button> 
+                        <button class="btn inp" id="nine">9</button> 
                     </div>
                     <div class="row">
-                        <button class="btn inp">4</button> 
-                        <button class="btn inp">5</button> 
-                        <button class="btn inp">6</button>
+                        <button class="btn inp" id="four">4</button> 
+                        <button class="btn inp" id="five">5</button> 
+                        <button class="btn inp" id="six">6</button>
                     </div>
                     <div class="row">
-                        <button class="btn inp">1</button> 
-                        <button class="btn inp">2</button> 
-                        <button class="btn inp">3</button>
+                        <button class="btn inp" id="one">1</button> 
+                        <button class="btn inp" id="two">2</button> 
+                        <button class="btn inp" id="three">3</button>
                     </div>
                     <div class="row">
-                        <button class="btn inp">0</button> 
-                        <button class="btn inp">.</button> 
-                        <button class="btn inp">=</button>
+                        <button class="btn inp" id="zero">0</button> 
+                        <button class="btn inp" id="point">.</button> 
+                        <button class="btn inp" id="equals">=</button>
                     </div>
                 </div>
                 <div class="col-auto">
-                    <div class="row">
-                        <button class="btn inp last" style="font-family: 'Material';">backspace</button>
+                    <div class="row" style="border-left: 1px solid #919191;">
+                        <button class="btn inp last" id="bspk" style="font-family: 'Material';">backspace</button>
                     </div>
-                    <div class="row">
+                    <div class="row"  style="border-left: 1px solid #919191;">
                         <button class="btn inp last">÷</button>
                     </div>
-                    <div class="row"> 
-                        <button class="btn inp last">×</button>
+                    <div class="row"  style="border-left: 1px solid #919191;"> 
+                        <button class="btn inp last">×</button> 
                     </div>
-                    <div class="row">
+                    <div class="row"  style="border-left: 1px solid #919191;">
                         <button class="btn inp last">-</button>
                     </div>
-                    <div class="row">
+                    <div class="row"  style="border-left: 1px solid #919191;">
                         <button class="btn inp last">+</button>
                     </div>
                 </div>
@@ -66,5 +66,6 @@
         <script type="text/javascript" src="./js/bootstrap.min.js"></script>
         <script type="text/javascript" src="./js/custom.js"></script>
         <script type="text/javascript" src="./js/evaluate.js"></script>
+        
     </body>
 </html>
