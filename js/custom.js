@@ -52,7 +52,7 @@ $('button').click(function(e){
     $('#top-key').scrollLeft(scrlval);
 });
 
-var pressTimer;
+/*var pressTimer;
 $("#bspk").mouseup(function(){
   clearTimeout(pressTimer);
   // Clear timeout
@@ -64,4 +64,12 @@ $("#bspk").mouseup(function(){
 		$('#top-key').text('');
 	},600);
 	return false; 
+});*/
+
+$(function(){
+  $("#bspk").bind( "taphold", tapholdHandler );
+  function tapholdHandler( event ){
+  		$('#bottom-key').text('');
+		$('#top-key').text('');
+  }
 });
